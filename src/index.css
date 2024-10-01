@@ -1,13 +1,284 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body{
+    margin:0px;
+    padding:0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*--------------------Navbar--------------------*/
+.navbar{
+    width:100%;
+    height:60px;
+    color:black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.left{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#asanalogo{
+    height:35px;
+    width:35px;
+}
+.logo{
+    height:80%;
+    width:25%;
+    font-size: 30px;
+    color:rgb(90, 20, 44);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.links{
+    width:75%;
+    color:#707070;
+}
+.links li{
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links a{
+    transition: 0.25s ease-in-out;
+}
+.links a:hover{
+    cursor:pointer;
+    color:black;
+}
+.right{
+    width:550px;
+    height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px;
+}
+.start{
+    width:300px;
+    color:#707070;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.start a{
+    transition: 0.25s ease-in-out;
+}
+.start a:hover{
+    color:black;
+}
+#globe{
+    font-size: 30px;
+    transition: 0.25s ease-in-out;
+}
+#globe:hover{
+    color:black;
+}
+#startbtn{
+    width:120px;
+    height:35px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    color:white;
+    border-style: none;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: 0.25s;
+    background-color: black;
+}
+#startbtn:hover{
+    cursor:pointer;
+    color:black;
+    background-color:#f06a6a;
+}
+#menuicon{
+    font-size: 30px;
+    cursor: pointer;
+    z-index:-1;
+}
+@media screen and (max-width:1100px){
+    #menuicon{
+        z-index:1;
+    }
+    .links{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    .start{
+        display: none;
+    }
+}
+/*-----------------------Home---------------------------*/
+.home{
+    width:100%;
+    height:auto;
+    background-color: rgb(254, 223, 223);
+    border:1px solid white;
+}
+.home h1{
+    font-size: 4rem;
+    letter-spacing: -0.5px;
+    color:rgb(90, 20, 44);
+    font-family: "Ghost","Helvetica Neue","Helvetica",sans-serif;
+}
+.home p{
+    font-size: 20px;
+    color:rgb(90, 20, 44);
+    font-family:"TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+}
+.btns{
+    width:100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+#b1{
+    border-style: none;
+    width:150px;
+    height:50px;
+    border-radius: 25px;
+    color:white;
+    cursor: pointer;
+    background-color: rgb(90, 20, 44);
+    font-size: 16px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    transition:0.25s ease-in-out;
+}
+#b1:hover{
+     background-color: rgb(146, 67, 95);
+}
+#b2{
+    border-style: none;
+    width:150px;
+    height:50px;
+    border:1px solid rgb(90, 20, 44);
+    border-radius: 25px;
+    color:rgb(90, 20, 44);
+    cursor: pointer;
+    background-color: rgb(254, 223, 223);
+    font-size: 16px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    transition: 0.25s ease-in-out;
+}
+#b2:hover{
+    background-color: rgb(247, 206, 209);
+}
+@media screen and (max-width:750px){
+    #b1,#b2{
+        width:90%;
+    }
+}
+.video{
+    width:80%;
+    height:500px;
+    margin-top:30px;
+    margin-bottom:50px;
+    border-radius:15px;
+    background-color: rgb(90, 20, 44);
+}
+
+/*----------------------About--------------------------*/
+.about{
+    width:100%;
+    height:auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:20px;
+}
+.comp{
+    width:100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.disc{
+    width:25%;
+    height:auto;
+}
+.disc h2{
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+}
+.companies{
+    width:70%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.companies img{
+    width:150px;
+    height:80px;
+}
+
+@media screen and (max-width:1000px){
+    .companies{
+        width:100%;
+    }
+    .disc{
+        width:100%;
+    }
+}
+.card{
+    width:100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+}
+.c{
+    width:300px;
+    height:300px;
+    padding:20px;
+    margin-top:50px;
+    border:1px solid #e0dfdf;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 0.25s ease-in-out;
+}
+.c:hover{
+    background-color: #f9f5f5;
+}
+.click{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+    transition: 0.25s ease-in-out;
+}
+.icon{
+    font-size: 25px;
+}
+.click:hover{
+    color:#707070;
 }
