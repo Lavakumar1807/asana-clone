@@ -11,7 +11,7 @@ const Home = ()=>{
               <button id="b2">View demo</button>
             </div>
             <div className="video">
-                
+            <iframe id="video" frameborder="0" allowfullscreen="" loading="lazy" src="https://fast.wistia.net/embed/iframe/e63ziqkf6i?fitStrategy=cover"></iframe>
             </div>
             </center>
        </div>

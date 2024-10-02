@@ -31,7 +31,7 @@ body{
     height:80%;
     width:25%;
     font-size: 30px;
-    color:rgb(90, 20, 44);
+    color:#690031;
     text-align: center;
     display: flex;
     align-items: center;
@@ -132,18 +132,18 @@ body{
 .home{
     width:100%;
     height:auto;
-    background-color: rgb(254, 223, 223);
+    background-color: #f0d3d9;
     border:1px solid white;
 }
 .home h1{
     font-size: 4rem;
     letter-spacing: -0.5px;
-    color:rgb(90, 20, 44);
+    color:#690031;
     font-family: "Ghost","Helvetica Neue","Helvetica",sans-serif;
 }
 .home p{
     font-size: 20px;
-    color:rgb(90, 20, 44);
+    color:#690031;
     font-family:"TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
 }
 .btns{
@@ -162,7 +162,7 @@ body{
     border-radius: 25px;
     color:white;
     cursor: pointer;
-    background-color: rgb(90, 20, 44);
+    background-color: #690031;
     font-size: 16px;
     font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
     transition:0.25s ease-in-out;
@@ -174,11 +174,11 @@ body{
     border-style: none;
     width:150px;
     height:50px;
-    border:1px solid rgb(90, 20, 44);
+    border:1px solid #690031;
     border-radius: 25px;
-    color:rgb(90, 20, 44);
+    color:#690031;
     cursor: pointer;
-    background-color: rgb(254, 223, 223);
+    background-color: #f0d3d9;
     font-size: 16px;
     font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
     transition: 0.25s ease-in-out;
@@ -192,14 +192,21 @@ body{
     }
 }
 .video{
-    width:80%;
-    height:500px;
+    width:90%;
+    height:30em;
     margin-top:30px;
     margin-bottom:50px;
-    border-radius:15px;
-    background-color: rgb(90, 20, 44);
-}
+    border-radius:20px;
+    padding:20px;
+    background-color: #690031;
 
+}
+#video{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    border-style: none;
+}
 /*----------------------About--------------------------*/
 .about{
     width:100%;
@@ -209,7 +216,6 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin:20px;
 }
 .comp{
     width:100%;
@@ -234,7 +240,7 @@ body{
     justify-content: space-around;
 }
 .companies img{
-    width:150px;
+    width:20%;
     height:80px;
 }
 
@@ -243,6 +249,9 @@ body{
         width:100%;
     }
     .disc{
+        width:100%;
+    }
+    .companies{
         width:100%;
     }
 }
@@ -281,4 +290,380 @@ body{
 }
 .click:hover{
     color:#707070;
+}
+
+#head{
+    font-size: 40px;
+    font-family:"TWK Lausanne","Helvetica Neue","Helvetica",sans-serif ;
+}
+.department{
+    width:90%;
+    height:600px;
+    border:1px solid #909090;
+    border-radius: 15px;
+    padding:20px;
+}
+.buttons{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.depbtn{
+    width:auto;
+    height:60px;
+    padding:16px 32px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border-style: none;
+    cursor:pointer;
+    border-radius: 146px;
+}
+/*----------------------------------------*/
+.getstartsection{
+    width:95%;
+    height:auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    color:#0d0d0d;
+    border-radius: 20px;
+    background-color: #fafafa;
+}
+.leftpart{
+    width:40%;
+    font-family: "TWK Lausanne", "Helvetica Neue", "Helvetica", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.leftpart h1{
+    font-size: 60px;
+    font-family: "Ghost", "Helvetica Neue", "Helvetica", sans-seri;
+    margin-bottom: 24px;
+}
+.leftpart p{
+     font-size: 20px;
+}
+
+.rightpart{
+    width:600px;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+.go{
+    width:100%;
+    height:150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor:pointer;
+    background-color: white;
+}
+.go:hover{
+    background-color: #f3f3f3;
+}
+.heading{
+    height:70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading h4{
+    margin:0;
+    font-size: 30px;
+}
+.heading p{
+    margin:10px 0 0;
+    font-size: 20px;
+    color:#6e6e6e;
+}
+#go{
+    font-size: 50px;
+}
+@media screen and (max-width:950px){
+    .getstartsection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .leftpart{
+         width:100%;
+    }
+    .rightpart{
+        width:90%;
+    }
+}
+/*-------------------------Footer----------------------------*/
+.footer{
+    width:100%;
+    height:auto;
+    background-color: #690031;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.title{
+    width:100%;
+    height:auto;
+    color:white;
+    font-size: 60px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ttl{
+    width:50%;
+    text-align: left;
+    padding:25px;
+    letter-spacing: 0;
+    font-family: "Ghost","Helvetica Neue","Helvetica",sans-serif;
+}
+.footerbtn{
+    margin:30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footerbtn button{
+    color:#690031;
+    font-weight: 500;
+    border-style: none;
+    background-color: rgb(247, 206, 209);
+    padding:16px 32px;
+    border-radius: 100px;
+    transition: 0.25s ease-in-out;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+}
+.footerbtn button:hover{
+    background-color: rgb(203, 149, 168);
+    cursor: pointer;
+}
+@media screen and (max-width:1400px){
+    .title{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+/*------------------------*/
+.info{
+    width:90%;
+    height:auto;
+    font-size: 13px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    color:white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding:32px 0px;
+    border-top:1.5px solid rgb(130, 50, 78);
+    border-bottom:1.5px solid  rgb(130, 50, 78);
+}
+.info a{
+    cursor:pointer;
+}
+/*--------------------------------*/
+.relatedlinks{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top:30px;
+}
+.logo{
+    width:10%;
+    cursor:pointer;
+}
+.logo img{
+    width:30px;
+    height:30px;
+    border-radius: 50px;
+}
+.lks{
+    width:90%;
+    height:auto;
+    color:white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.name{
+    margin-bottom: 30px;
+}
+#asana,#aboutus,#learn,#workflow,#resources{
+    width:250px;
+}
+#asana li{
+    font-size: 14px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    list-style:none;
+    text-align: left;
+}
+#asana li a{
+    font-size: 16px;
+    line-height: 200%;
+    cursor: pointer;
+    color:#cdc9c9;
+    transition:0.5s ease-in-out;
+}
+#asana li a:hover{
+    color:white;
+    border-bottom: 1px solid white;
+}
+#aboutus li{
+    font-size: 14px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    list-style:none;
+    text-align: left;
+}
+#aboutus li a{
+    font-size: 16px;
+    line-height: 200%;
+    cursor: pointer;
+    color:#cdc9c9;;
+    transition:0.4s ease-in-out;
+}
+#aboutus li a:hover{
+    color:white;
+    border-bottom: 1px solid white;
+}
+#workflow li{
+    font-size: 14px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    list-style:none;
+    text-align: left;
+}
+#workflow li a{
+    font-size: 16px;
+    line-height: 200%;
+    cursor: pointer;
+    color:#cdc9c9;;
+    transition:0.4s ease-in-out;
+}
+#workflow li a:hover{
+    color:white;
+    border-bottom: 1px solid white;
+}
+#resources li{
+    font-size: 14px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    list-style:none;
+    text-align: left;
+}
+#resources li a{
+    font-size: 16px;
+    line-height: 200%;
+    cursor: pointer;
+    color:#cdc9c9;;
+    transition:0.4s ease-in-out;
+}
+#resources li a:hover{
+    color:white;
+    border-bottom: 1px solid white;
+}
+#learn li{
+    font-size: 14px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    list-style:none;
+    text-align: left;
+}
+#learn li a{
+    font-size: 16px;
+    line-height: 200%;
+    cursor: pointer;
+    color:#cdc9c9;;
+    transition:0.4s ease-in-out;
+}
+#learn li a:hover{
+    color:white;
+    border-bottom: 1px solid white;
+}
+@media screen and (max-width:1000px){
+    .relatedlinks{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+/*-----------------------------*/
+.media{
+    width:100%;
+    height:auto;
+    display: flex;
+    color:white;
+    font-size: 16px;
+    font-family:"TWK Lausanne","Helvetica Neue","Helvetica",sans-serif ;
+    align-items: center;
+    justify-content: space-around;
+    gap:20px;
+    padding-top:32px;
+    padding-bottom:32px;
+    flex-wrap: wrap;
+    background-color: #710c3a;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+}
+#lang{
+    font-size: 25px;
+}
+.open{
+    color:#c6c4c4;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+.open:hover{
+    color:white;
+    border-bottom: 1px solid white;
+}
+#mediaicons{
+    color:black;
+    font-size: 30px;
+    cursor: pointer;
+}
+#i1{
+    width:120px;
+    border-radius: 5px;
+    cursor:pointer;
+    border:1px solid white;
+}
+#i2{
+    cursor: pointer;
+    border-radius: 5px;
+    height:40px;
+}
+@media screen and (max-width:1000px){
+    .media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
