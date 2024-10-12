@@ -18,7 +18,7 @@ body{
 }
 
 .left{
-    width:50%;
+    width:60%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -132,7 +132,7 @@ body{
 .home{
     width:100%;
     height:auto;
-    background-color: #f0d3d9;
+    background-color: #ffeaec;
     border:1px solid white;
 }
 .home h1{
@@ -178,7 +178,7 @@ body{
     border-radius: 25px;
     color:#690031;
     cursor: pointer;
-    background-color: #f0d3d9;
+    background-color: #ffeaec;
     font-size: 16px;
     font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
     transition: 0.25s ease-in-out;
@@ -409,6 +409,88 @@ body{
     }
     .rightpart{
         width:90%;
+    }
+}
+/*----------------------------------------*/
+.recognization{
+   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+   margin:20px;
+}
+.recognization h1{
+    width:100%;
+    font-size: 40px;
+    line-height: 150%;
+    font-family: "Ghost","Helvetica Neue","Helvetica",sans-serif;
+    grid-row: 2;
+    text-align: left;
+}
+.analysts{
+    width:100%;
+    display: flex;
+    color:rgb(13,13,13);
+    row-gap: 64px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "TWK Lausanne", "Helvetica Neue", "Helvetica", sans-serif;
+    column-gap: 20px;
+}
+.a{
+    width:30%;
+    height:auto;
+    font-size: 1rem;
+    border-radius:10px;
+}
+.a img{
+    width:100%;
+    border-radius: 10px;
+}
+.learnmore{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+    font-family: "TWK Lausanne","Helvetica Neue","Helvetica",sans-serif;
+    cursor:pointer;
+    transition:0.3s ease-in-out ;
+}
+.learnmore:hover{
+    color:rgb(110, 110, 110)
+}
+@media screen and (max-width:970px){
+    .analysts{
+        width:100%;
+        height:auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .a{
+        width:40%;
+    }
+}
+@media screen and (max-width:766px){
+    .analysts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .a{
+        width:100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        border-radius: 20px;
+    }
+    .a img{
+        border-radius: 20px;
     }
 }
 /*-------------------------Footer----------------------------*/

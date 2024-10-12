@@ -6,6 +6,9 @@ import jj from "../images/jj.png";
 import Merck from "../images/Merck.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaArrowCircleRight } from "react-icons/fa";
+import Gartner from '../images/Gartner.png';
+import idc from '../images/idc.png';
+import wave from '../images/wave.png';
 
 const About = ()=>{
     return(
@@ -88,6 +91,36 @@ const About = ()=>{
                 </div>
                 <FaArrowCircleRight id="go"/>
                </div>
+            </div>
+        </div>
+
+        <div className="recognization">
+            <h1>Recognized as a leader by top analyst firms</h1>
+            <div className="analysts">
+                 <div className="a">
+                    <img src={Gartner}/>
+                    <div>
+                    <p>A Leader in the Gartner Magic Quadrant for Collaborative Work Management²</p>
+                    <div className="learnmore">
+                      <p>Learn more</p>
+                      <FaArrowCircleRight/>
+                    </div>
+                    </div>
+                 </div>
+                 <div className="a">
+                    <img src={wave}/>
+                    <div>
+                    <p>A Leader in the The Forrester Wave™: Collaborative Work Management Tools Report³</p>
+                    <div className="learnmore">
+                      <p>Learn more</p>
+                      <FaArrowCircleRight/>
+                    </div>
+                    </div>
+                 </div>
+                 <div className="a">
+                    <img src={idc}/>
+                    <p>A Leader in the IDC MarketScape: Worldwide Collaborative Work Management Vendor Assessment⁴</p>
+                 </div>
             </div>
         </div>
 
